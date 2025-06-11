@@ -1,73 +1,88 @@
-# Welcome to your Lovable project
+# 🌌 Aura Launch Verse
 
-## Project info
+**Aura Launch Verse** is a modern, dynamic web UI built with React, TypeScript, and Tailwind CSS. Designed to showcase a futuristic product launch or event, this project uses advanced UI components from the Radix UI, ShadCN, and other modern libraries for a visually rich and interactive experience.
 
-**URL**: https://lovable.dev/projects/924096b6-c36b-4ffe-a746-3b4dca5d5833
+## 🚀 Features
 
-## How can I edit this code?
+- ⚛️ Built with **React 18** and **TypeScript**
+- 🎨 Styled with **Tailwind CSS** and **tailwindcss-animate**
+- 🧩 Modular UI powered by **ShadCN components** and **Radix UI**
+- 🎞️ Dynamic animations and transitions
+- 📊 Integrated charting via **Recharts**
+- 📱 Fully responsive and mobile-friendly
+- 🌙 Dark mode support via **next-themes**
+- 🔒 Form validation using **React Hook Form** and **Zod**
+- 🔧 Configured with **Vite** for fast build and dev
 
-There are several ways of editing your application.
+## 📁 Project Structure
 
-**Use Lovable**
+aura-launch-verse/
+├── public/ # Static assets (favicon, etc.)
+├── src/ # Main application source code
+├── components.json # ShadCN component config
+├── tailwind.config.ts # Tailwind configuration
+├── vite.config.ts # Vite build configuration
+├── tsconfig*.json # TypeScript configurations
+└── index.html # Entry HTML
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/924096b6-c36b-4ffe-a746-3b4dca5d5833) and start prompting.
+shell
+Copy
+Edit
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js (v18+)
+- Bun (recommended) or npm/yarn
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+bun install
+# or
+npm install
+Development
+bash
+Copy
+Edit
+bun run dev
+# or
 npm run dev
-```
+Build
+bash
+Copy
+Edit
+bun run build
+# or
+npm run build
+🧪 Linting
+bash
+Copy
+Edit
+bun run lint
+# or
+npm run lint
+📦 Technologies Used
+React
 
-**Edit a file directly in GitHub**
+Vite
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Tailwind CSS
 
-**Use GitHub Codespaces**
+Radix UI
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+React Hook Form
 
-## What technologies are used for this project?
+Zod
 
-This project is built with:
+Recharts
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Lucide Icons
 
-## How can I deploy this project?
+Bun
 
-Simply open [Lovable](https://lovable.dev/projects/924096b6-c36b-4ffe-a746-3b4dca5d5833) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+👨‍💻 Author
+Bishal Sharma
+📧 bishalsharma153@gmail.com
+🔗 GitHub | LinkedIn
