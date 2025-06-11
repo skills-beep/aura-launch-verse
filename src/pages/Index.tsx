@@ -8,6 +8,7 @@ import CountdownTimer from '../components/CountdownTimer';
 import TestimonialsSlider from '../components/TestimonialsSlider';
 import PricingPlans from '../components/PricingPlans';
 import FAQAccordion from '../components/FAQAccordion';
+import DeveloperSection from '../components/DeveloperSection';
 import NewsletterSignup from '../components/NewsletterSignup';
 import Footer from '../components/Footer';
 
@@ -31,6 +32,7 @@ const Index = () => {
         <TestimonialsSlider />
         <PricingPlans />
         <FAQAccordion />
+        <DeveloperSection />
         <NewsletterSignup />
       </main>
       <Footer />
