@@ -1,12 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect, useState } from 'react';
+import HeroSection from '../components/HeroSection';
+import Navigation from '../components/Navigation';
+import ProductFeatures from '../components/ProductFeatures';
+import ProductShowcase from '../components/ProductShowcase';
+import CountdownTimer from '../components/CountdownTimer';
+import TestimonialsSlider from '../components/TestimonialsSlider';
+import PricingPlans from '../components/PricingPlans';
+import FAQAccordion from '../components/FAQAccordion';
+import NewsletterSignup from '../components/NewsletterSignup';
+import Footer from '../components/Footer';
 
 const Index = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-gray-950 text-white overflow-x-hidden">
+      <Navigation />
+      <main>
+        <HeroSection scrollY={scrollY} />
+        <ProductFeatures />
+        <ProductShowcase />
+        <CountdownTimer />
+        <TestimonialsSlider />
+        <PricingPlans />
+        <FAQAccordion />
+        <NewsletterSignup />
+      </main>
+      <Footer />
     </div>
   );
 };
