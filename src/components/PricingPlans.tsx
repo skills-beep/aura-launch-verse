@@ -35,7 +35,7 @@ const PricingPlans = () => {
         "Wireless Charging",
         "Premium Materials"
       ],
-      popular: true,
+      popular: false,
       color: "from-cyan-500 to-purple-600",
       icon: Zap,
       description: "Most popular choice"
@@ -123,30 +123,15 @@ const PricingPlans = () => {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative group ${
-                plan.popular ? 'transform scale-105 lg:scale-110' : ''
-              }`}
+              className="relative group"
             >
-              {plan.popular && (
-                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-20">
-                  <div className="bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-8 py-3 rounded-full text-sm font-bold flex items-center space-x-2 shadow-xl animate-pulse">
-                    <Crown className="w-4 h-4" />
-                    <span>Most Popular</span>
-                  </div>
-                </div>
-              )}
-
-              <div className={`relative bg-gray-900/80 backdrop-blur-xl border-2 ${
-                plan.popular ? 'border-cyan-500/50 shadow-2xl shadow-cyan-500/20' : 'border-gray-700/50'
-              } rounded-3xl p-8 hover:border-cyan-500/70 transition-all duration-500 group-hover:transform group-hover:scale-105 overflow-hidden`}>
+              <div className="relative bg-gray-900/80 backdrop-blur-xl border-2 border-gray-700/50 rounded-3xl p-8 hover:border-cyan-500/70 transition-all duration-500 group-hover:transform group-hover:scale-105 overflow-hidden">
                 
                 {/* Enhanced Background Gradient */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${plan.color} opacity-5 group-hover:opacity-15 transition-all duration-500`} />
                 
                 {/* Animated Border Effect */}
-                <div className={`absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
-                  plan.popular ? 'bg-gradient-to-r from-cyan-500/20 to-purple-600/20' : 'bg-gradient-to-r from-gray-600/20 to-gray-700/20'
-                } blur-xl -z-10`} />
+                <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r from-gray-600/20 to-gray-700/20 blur-xl -z-10" />
                 
                 <div className="relative z-10">
                   {/* Plan Header */}
@@ -155,7 +140,7 @@ const PricingPlans = () => {
                       <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
                       <p className="text-gray-400 text-sm">{plan.description}</p>
                     </div>
-                    <plan.icon className={`w-8 h-8 ${plan.popular ? 'text-cyan-400' : 'text-gray-400'} group-hover:scale-110 transition-transform duration-300`} />
+                    <plan.icon className="w-8 h-8 text-gray-400 group-hover:scale-110 transition-transform duration-300" />
                   </div>
                   
                   {/* Enhanced Pricing */}
@@ -191,12 +176,8 @@ const PricingPlans = () => {
                   </ul>
 
                   {/* Enhanced CTA Button */}
-                  <button className={`w-full py-4 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 ${
-                    plan.popular
-                      ? 'bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white shadow-xl hover:shadow-cyan-500/30'
-                      : 'border-2 border-gray-600 hover:border-cyan-500 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-cyan-500/10 hover:to-purple-600/10 backdrop-blur-sm'
-                  }`}>
-                    {plan.popular ? 'Get Started Now' : 'Choose Plan'}
+                  <button className="w-full py-4 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 border-2 border-gray-600 hover:border-cyan-500 text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-cyan-500/10 hover:to-purple-600/10 backdrop-blur-sm">
+                    Choose Plan
                   </button>
                 </div>
 
